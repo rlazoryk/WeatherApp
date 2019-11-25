@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weater App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="D:\Roman\Exoft\WeatherApp\app.js"></script>
+    </head>
+    <body style='background-image:url(images/19708736.jpg)'>
+        <header><h1>Weater App</h1></header>
+        <div id='generalBlock'>
+            <div id='inputBlock'>
+                <p id='mainP'>Enter the City:</p>
+                <input type="text" id='inputBlockInput'>
+                <button class="inputBlockBtn" onclick="MakeRequest()">Show Weater</button>
+            </div>
+            <div id='responseBlock' style="display: none;">
+                <div id="cityName">London UK</div>
+                <div id='temperature'>17 C</div>
+                <div style="position: relative;">
+                    <div id='details'> 
+                        <p class="detailsP" id='p1'></p>                   
+                        <p class="detailsP" id='p2'></p>
+                        <p class="detailsP" id='p3'></p>
+                        <p class="detailsP" id='p4'></p>
+                    </div>
+                    <img src="#none" id="img">
+                </div>          
+            </div>                        
+        </div>
+        <button class="inputBlockBtn" id="clearBtn" onclick="Clear()">Clear</button>
+    </body>
+</html>
